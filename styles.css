@@ -1,0 +1,91 @@
+/* to get rid of basic browser style */
+.{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+    background-color: #A8E7E9;
+    height: 100%;
+}
+h1{
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  background-color: #FDE49C;
+  background-size: cover;
+}
+
+
+/* The entire game is gonna be inside this box (The outline box)*/
+#game{
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  background-image: url("forest.jpg");
+  background-size: cover;
+  display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+/* Character i.e OGGY */
+#character{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+  background-image: url("oggy.png");
+  background-size: cover;
+}
+
+.animate{
+  animation: jump 500ms;
+}
+/* OGGY has to jump! */
+/* To create an animantion for that */
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+/* Block which is the obstacles..STONE */
+#block{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 90px;
+  left: 480px;
+  animation: block 1s infinite linear;
+  background-image: url("rock.png");
+  background-size: cover;
+}
+
+#cockroaches{
+  width: 30px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 470px;
+  background-image: url("cockroaches.png");
+  background-size: cover;
+}
+
+/* To make the STONE(obstucle) to slide towards our dino */
+/* Create an animation */
+@keyframes block{
+  0%{left: 480px;}
+  100%{left: -40px;}
+}
+.instructions{
+  font-size: 10px;
+  font-family: 'Neucha', cursive;
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Neucha', cursive;
+}
