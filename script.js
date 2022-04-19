@@ -3,6 +3,9 @@ character = document.getElementById("character");
 block = document.getElementById("block");
 const score = document.getElementById('score');
 
+var yourName = prompt("Enter your name:");
+alert("Hello " + yourName + " Let's begin the game!");
+
 function jump(){
   if(character.classList != "animate"){
     character.classList.add("animate");
@@ -29,4 +32,4 @@ var checkdead  =setInterval(function(){
 
   }
 
-},10);
+},20);

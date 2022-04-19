@@ -1,12 +1,13 @@
-/* to get rid of basic browser style */
+/* to get rid of basic browser style 
 .{
   margin: 0;
   padding: 0;
 
-}
+}*/
 body{
     background-color: #A8E7E9;
     height: 100%;
+    width: 100%;
 }
 h1{
   font-size: 2rem;
@@ -15,11 +16,15 @@ h1{
   background-color: #FDE49C;
   background-size: cover;
 }
+#mainbox{
+  width: auto;
+  height: fit-content;
 
+}
 
 /* The entire game is gonna be inside this box (The outline box)*/
 #game{
-  width: 500px;
+  width: 510px;
   height: 200px;
   border: 2px solid black;
   background-image: url("forest.jpg");
@@ -40,7 +45,7 @@ h1{
 }
 
 .animate{
-  animation: jump 500ms;
+  animation: jump 600ms;
 }
 /* OGGY has to jump! */
 /* To create an animantion for that */
@@ -57,7 +62,7 @@ h1{
   position: relative;
   top: 90px;
   left: 480px;
-  animation: block 1s infinite linear;
+  animation: block 2s infinite linear;
   background-image: url("rock.png");
   background-size: cover;
 }
